@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+<body>
+    <title>Class 4 Demo</title>
+
+    <script>
+
+        //Connvert length into feet + inches seperately
+        // Setting feet as a variable. 
+        FEET = 12;
+
+
+        // prompting the user to enter length in inches
+        var length_str = prompt("Length in Inches", "18");
+        //using parseInt to set as whole number
+        length = parseInt(length_str);
+
+
+        //Formula to convert the inches to feet and find the remaining inches.
+        var len_feet = parseInt(length / FEET);
+        var len_inches = length % FEET;
+
+        document.write("Length is " + len_feet + "' and " + len_inches + "''");
+
+
+</script>
+</body>
+</html>
